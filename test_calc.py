@@ -33,11 +33,12 @@ class TestCalc:
         result =self.calc.mul(a,b)
         assert result == expect
 
-
     @pytest.mark.parametrize('a,b,expect',[[2,1,2],[6,3,2],[4,2,2]],ids=['/1','/2','/3'])
     def test_div(self,a,b,expect):
         result =self.calc.div(a,b)
         assert result == expect
 
-# -
-# -
+    def test_div(self):#捕获异常
+        with pytest.raises(ZeroDivisionError):
+            result = self.calc.div(1,0)
+
