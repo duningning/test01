@@ -1,4 +1,4 @@
-#计算机作业
+
 import pytest
 from pythoncode.calculator import Calculator
 
@@ -18,7 +18,6 @@ class TestCalc:
         assert result == expect
     #    def test_add1(self):
     #     #calc = Calculator()
-    #     result = self.calc.add(100,100)
     #     assert result == 200
     # def test_add2(self):
     #     #calc = Calculator()
@@ -34,9 +33,11 @@ class TestCalc:
         result =self.calc.mul(a,b)
         assert result == expect
 
+
     @pytest.mark.parametrize('a,b,expect',[[2,1,2],[6,3,2],[4,2,2]],ids=['/1','/2','/3'])
     def test_div(self,a,b,expect):
         result =self.calc.div(a,b)
         assert result == expect
 
+# -
 # -
