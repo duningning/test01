@@ -1,5 +1,5 @@
+#计算机作业
 import pytest
-
 from pythoncode.calculator import Calculator
 
 def test_a():
@@ -16,7 +16,7 @@ class TestCalc:
         #calc = Calculator()#1、重复的步骤可以提取出来放在setup中
         result = self.calc.add(a,b)
         assert result == expect
-    # def test_add1(self):
+    #    def test_add1(self):
     #     #calc = Calculator()
     #     result = self.calc.add(100,100)
     #     assert result == 200
@@ -39,4 +39,4 @@ class TestCalc:
         result =self.calc.div(a,b)
         assert result == expect
 
-# HogwartsSDET15
+# -
